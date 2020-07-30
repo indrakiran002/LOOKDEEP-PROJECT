@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PlayActivity_3"></activity>
+        <activity android:name=".PlayActivity_10"></activity>
+        <activity android:name=".PlayActivity_9" />
+        <activity android:name=".PlayActivity_8" />
+        <activity android:name=".PlayActivity_7" />
+        <activity android:name=".PlayActivity_6" />
+        <activity android:name=".PlayActivity_5" />
+        <activity android:name=".PlayActivity_4" />
+        <activity android:name=".PlayActivity_3" />
         <activity android:name=".PlayActivity_2" />
         <activity android:name=".LevelsActivity" />
         <activity android:name=".PlayActivity_1" />

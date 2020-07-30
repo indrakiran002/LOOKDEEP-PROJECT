@@ -1,8 +1,6 @@
 package com.example.lookdeep;
 
-import android.app.Activity;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,22 +8,17 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
-public class Hint1_Dialog extends AppCompatDialogFragment {
+public class Hint8_Dialog extends AppCompatDialogFragment {
 
     @NonNull
     @Override
     public android.app.Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("HINT")
-                .setMessage("The Person is coming in Hot Sun, with full of Sweat!!")
+                .setMessage("That's You!")
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-
-
-
-
-
 
                     }
                 });
@@ -36,3 +29,4 @@ public class Hint1_Dialog extends AppCompatDialogFragment {
 
 
 }
+
