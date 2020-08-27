@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -25,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle actionBarDrawerToggle;
 
+    TextView User;
+    String st;
+
     private Toolbar mToolbar;
 
     @Override
@@ -35,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
         Play_Button = (Button) findViewById(R.id.play_btn);
         Level_Button = (Button) findViewById(R.id.level_btn);
 
+        User = (TextView) findViewById(R.id.user);
+
+        st = getIntent().getExtras().getString("Value");
+        User.setText(st);
 
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
 

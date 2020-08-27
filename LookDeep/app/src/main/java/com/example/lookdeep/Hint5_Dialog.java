@@ -16,6 +16,7 @@ public class Hint5_Dialog extends AppCompatDialogFragment {
         final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("HINT")
                 .setMessage("Black is the darkest of all Colors.")
+
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

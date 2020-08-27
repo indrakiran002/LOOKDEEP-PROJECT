@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class PlayActivity_5 extends AppCompatActivity {
     private ImageButton Level_5_Btn, Hint_5;
     private Button Next_Level_6;
+    private TextView Q_5;
 
 
 
@@ -19,11 +21,19 @@ public class PlayActivity_5 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_5);
 
-        Level_5_Btn = (ImageButton) findViewById(R.id.level_5_btn);
         Hint_5 = (ImageButton) findViewById(R.id.hint5);
         Next_Level_6 = (Button) findViewById(R.id.next_level_6);
 
 
+        Q_5 = (TextView) findViewById(R.id.q5);
+
+        Q_5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDialog();
+
+            }
+        });
 
         Next_Level_6.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,17 +53,7 @@ public class PlayActivity_5 extends AppCompatActivity {
 
 
 
-        Level_5_Btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-
-                openDialog();
-
-
-
-            }
-        });
 
 
 
@@ -84,6 +84,8 @@ public class PlayActivity_5 extends AppCompatActivity {
         Intent level6Intent = new Intent(PlayActivity_5.this, PlayActivity_6.class);
 
         startActivity(level6Intent);
+    finish();
+
     }
 
 

@@ -90,5 +90,6 @@ public class PlayActivity_1 extends AppCompatActivity {
         Intent level2Intent = new Intent(PlayActivity_1.this, PlayActivity_2.class);
 
         startActivity(level2Intent);
+        finish();
     }
 }

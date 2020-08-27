@@ -7,11 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class PlayActivity_9 extends AppCompatActivity {
 
 
-    private ImageButton Level_9_Btn, Hint_9;
+    private ImageButton Hint_9;
+    ImageView Level_9_Btn;
     private Button Next_Level_10;
 
 
@@ -21,7 +23,7 @@ public class PlayActivity_9 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_9);
 
-        Level_9_Btn = (ImageButton) findViewById(R.id.level_9_btn);
+        Level_9_Btn = (ImageView) findViewById(R.id.level_9_btn);
         Hint_9 = (ImageButton) findViewById(R.id.hint9);
         Next_Level_10 = (Button) findViewById(R.id.next_level_10);
 
@@ -68,7 +70,7 @@ public class PlayActivity_9 extends AppCompatActivity {
 
     private void openDialog() {
 
-        Dialog new_dialog = new Dialog();
+        Dialog_End new_dialog = new Dialog_End();
         new_dialog.show(getSupportFragmentManager(), "dialog");
     }
 
@@ -86,6 +88,8 @@ public class PlayActivity_9 extends AppCompatActivity {
         Intent level10Intent = new Intent(PlayActivity_9.this, PlayActivity_10.class);
 
         startActivity(level10Intent);
+    finish();
+
     }
 
 

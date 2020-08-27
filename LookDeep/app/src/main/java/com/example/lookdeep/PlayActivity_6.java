@@ -7,13 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class PlayActivity_6 extends AppCompatActivity {
 
 
-    private ImageButton Level_6_Btn, Hint_6;
+    private ImageButton  Hint_6;
     private Button Next_Level_7;
-
+private ImageView Level_6_Btn;
 
 
     @Override
@@ -21,7 +22,7 @@ public class PlayActivity_6 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_6);
 
-        Level_6_Btn = (ImageButton) findViewById(R.id.level_6_btn);
+        Level_6_Btn = (ImageView) findViewById(R.id.level_6_btn);
         Hint_6 = (ImageButton) findViewById(R.id.hint6);
         Next_Level_7 = (Button) findViewById(R.id.next_level_7);
 
@@ -86,6 +87,8 @@ public class PlayActivity_6 extends AppCompatActivity {
         Intent level7Intent = new Intent(PlayActivity_6.this, PlayActivity_7.class);
 
         startActivity(level7Intent);
+    finish();
+
     }
 
 

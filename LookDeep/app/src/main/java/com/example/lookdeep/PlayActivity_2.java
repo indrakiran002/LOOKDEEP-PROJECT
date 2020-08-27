@@ -83,6 +83,6 @@ public class PlayActivity_2 extends AppCompatActivity {
         Intent level3Intent = new Intent(PlayActivity_2.this, PlayActivity_3.class);
 
         startActivity(level3Intent);
-
+finish();
     }
 }

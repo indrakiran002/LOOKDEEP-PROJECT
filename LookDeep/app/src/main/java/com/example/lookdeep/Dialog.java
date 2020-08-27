@@ -16,7 +16,7 @@ public class Dialog extends AppCompatDialogFragment {
     public android.app.Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("Level Passed")
-                .setMessage("Horrah! He can Relax Now...")
+                .setMessage("Horrah! You Passed the Level...")
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

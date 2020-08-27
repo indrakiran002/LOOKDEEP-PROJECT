@@ -15,7 +15,7 @@ public class Hint6_Dialog extends AppCompatDialogFragment {
     public android.app.Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("HINT")
-                .setMessage("He is sleeping.")
+                .setMessage("He is sleeping(Should open EYES first.\nSo wake Him:))")
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

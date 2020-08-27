@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome_Activity"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:id="@+id/login_icon"
+        android:layout_width="369dp"
+        android:layout_height="147dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="53dp"
+        app:srcCompat="@drawable/logo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/name_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:hint="Enter Your Name"
+            android:textColorHint="#000000"
+
+            android:textAlignment="center"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/main_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="128dp"
+
+            android:hint="Go"
+            android:background="@drawable/button"
+            android:text="Go"
+            android:textColor="#F1EDED"
+            android:textSize="20sp"
+
+            />
+
+        <Button
+            android:id="@+id/instructions"
+            android:layout_below="@+id/main_home"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Instructions"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/button"
+            android:text="Instructions"
+            android:textColor="#F1EDED"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

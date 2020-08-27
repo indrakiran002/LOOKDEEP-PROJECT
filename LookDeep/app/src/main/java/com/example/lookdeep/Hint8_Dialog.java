@@ -15,7 +15,7 @@ public class Hint8_Dialog extends AppCompatDialogFragment {
     public android.app.Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("HINT")
-                .setMessage("That's You!")
+                .setMessage("That's You!\nThere's a Cam. Open it and You can See Yourself")
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

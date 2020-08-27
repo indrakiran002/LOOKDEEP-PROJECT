@@ -9,9 +9,9 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class PlayActivity_4 extends AppCompatActivity {
-    private ImageButton Level_4_Btn, Hint_4;
+    private ImageButton  Hint_4;
     private Button Next_Level_5;
-
+private Button Level_4_Btn;
 
 
     @Override
@@ -19,7 +19,7 @@ public class PlayActivity_4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_4);
 
-        Level_4_Btn = (ImageButton) findViewById(R.id.level_4_btn);
+        Level_4_Btn = (Button) findViewById(R.id.level_4_btn);
         Hint_4 = (ImageButton) findViewById(R.id.hint4);
         Next_Level_5 = (Button) findViewById(R.id.next_level_5);
 
@@ -84,6 +84,7 @@ public class PlayActivity_4 extends AppCompatActivity {
         Intent level5Intent = new Intent(PlayActivity_4.this, PlayActivity_5.class);
 
         startActivity(level5Intent);
+finish();
     }
 
 

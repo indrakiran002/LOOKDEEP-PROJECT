@@ -4,23 +4,25 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class PlayActivity_8 extends AppCompatActivity {
 
-    private ImageButton Level_8_Btn, Hint_8;
+    private ImageButton  Hint_8;
     private Button Next_Level_9;
 
-
+private ImageView Level_8_Btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_8);
 
-        Level_8_Btn = (ImageButton) findViewById(R.id.level_8_btn);
+        Level_8_Btn = (ImageView) findViewById(R.id.level_8_btn);
         Hint_8 = (ImageButton) findViewById(R.id.hint8);
         Next_Level_9 = (Button) findViewById(R.id.next_level_9);
 
@@ -47,7 +49,12 @@ public class PlayActivity_8 extends AppCompatActivity {
         Level_8_Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent launchIntent = new Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA);
+                launchIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                launchIntent.putExtra("android.intent.extras.CAMERA_FACING", android.hardware.Camera.CameraInfo.CAMERA_FACING_FRONT);
+                launchIntent.putExtra("android.intent.extras.LENS_FACING_FRONT", 1);
+                launchIntent.putExtra("android.intent.extra.USE_FRONT_CAMERA", true);
+                startActivity(launchIntent);
 
                 openDialog();
 
@@ -85,6 +92,7 @@ public class PlayActivity_8 extends AppCompatActivity {
         Intent level9Intent = new Intent(PlayActivity_8.this, PlayActivity_9.class);
 
         startActivity(level9Intent);
+        finish();
     }
 
 

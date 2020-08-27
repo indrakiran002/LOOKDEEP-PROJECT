@@ -4,33 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PlayActivity_9">
+    tools:context=".PlayActivity_9"
+    android:background="#FFFFFF">
 
 
-
-    <ImageButton
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="-6dp"
-        android:layout_marginBottom="0dp"
-        android:src="@drawable/fan" />
-
-    <ImageButton
-        android:id="@+id/level_9_btn"
-        android:layout_width="51dp"
-        android:layout_height="43dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="258dp"
-        android:src="@drawable/fan_switch" />
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
+        android:layout_marginBottom="117dp"
+        android:src="@drawable/child" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="137dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="270dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/mask" />
+
+    <ImageView
+        android:layout_width="137dp"
+        android:layout_height="124dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/san" />
+
+    <ImageView
+        android:id="@+id/level_9_btn"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="292dp"
+        android:src="@drawable/huts" />
 
     <Button
         android:id="@+id/next_level_10"
@@ -60,6 +79,18 @@
         android:textSize="50sp"
         tools:layout_editor_absoluteX="151dp"
         tools:layout_editor_absoluteY="324dp"  />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView5"
+        android:text="How To Get Rid Of Corona Virus?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#070606"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
 
     <ImageButton
         android:id="@+id/hint9"
@@ -73,19 +104,5 @@
         android:layout_marginRight="13dp"
         android:src="@drawable/hint"/>
 
-
-    <TextView
-        android:id="@+id/q9"
-        android:layout_width="363dp"
-        android:layout_height="73dp"
-        android:layout_below="@+id/textView5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:text="How to get rid of Corono Virus?"
-        android:textColor="#070606"
-        android:textSize="20sp"
-        android:textStyle="bold" />
 
 </RelativeLayout>
